@@ -12,8 +12,8 @@
 
   <modules>
     <module>app-java</module>
-    <module>app-groovy</module>
-    <module>app-it</module>
+    <!--<module>app-groovy</module>
+    <module>app-it</module>-->
   </modules>
 
   <properties>
@@ -24,8 +24,8 @@
     <!-- The destination file for the code coverage report has to be set to the same value
          in the parent pom and in each module pom. Then JaCoCo will add up information in
          the same report, so that, it will give the cross-module code coverage. -->
-    <sonar.jacoco.itReportPath>${project.basedir}/../target/jacoco-it.exec</sonar.jacoco.itReportPath>
-    <sonar.groovy.binaries>target/classes</sonar.groovy.binaries>
+    <!--<sonar.jacoco.itReportPath>${project.basedir}/../target/jacoco-it.exec</sonar.jacoco.itReportPath>
+    <sonar.groovy.binaries>target/classes</sonar.groovy.binaries>-->
   </properties>
 
   <dependencies>
@@ -81,7 +81,7 @@
                   <goal>prepare-agent</goal>
                 </goals>
               </execution>
-              <execution>
+              <!--<execution>
                 <id>agent-for-it</id>
                 <goals>
                   <goal>prepare-agent-integration</goal>
@@ -93,7 +93,7 @@
                 <goals>
                   <goal>report</goal>
                 </goals>
-              </execution>
+              </execution>-->
             </executions>
           </plugin>
         </plugins>
