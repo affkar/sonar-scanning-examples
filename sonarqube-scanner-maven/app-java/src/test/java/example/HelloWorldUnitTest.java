@@ -6,7 +6,8 @@ public class HelloWorldUnitTest {
 
   @Test
   public void test() {
-    //new HelloWorld().coveredByUnitTest();
+    new HelloWorld().functionality1();
+    new HelloWorld().functionality2();
   }
 
 }
