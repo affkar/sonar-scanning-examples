@@ -18,4 +18,8 @@ public class HelloWorld {
     System.out.println("notCovered");
   }
 
+  private void notused(){
+    System.out.println("This code is not used anywhere");
+  }
+
 }
